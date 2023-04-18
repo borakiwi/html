@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!--액션 가져오다 http꼭 넣어야 함-->
+  <from method='get' action='http://127.0.0.1:5000'></from>
+  <br>
+  <input type="text" name="타이틀">
+
+  <button>전송</button>
+  <br>
+  <input type="checkbox" name="agree" id="agree">
+  <label for='agree'>동의합니다. </label>
+  <!-- 위에 라벨을 하면 동의합니다고 클릭이 가능해진다-->
+  <br>
+  <input type="radio" id="a" name="lunch" value="a">
+  <label for="a">짜장</label><br>
+  <input type="radio" id="b" name="lunch" value="b">
+  <label for="b">짬뽕</label><br>
+  <input type="radio" id="c" name="lunch" value="c">
+  <label for="c">볶음밥</label>
+  <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+  <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi" selected>Audi</option>
+  </select>
+  <form from method='get'>
+    <input type="text" name="title" value="" pattern="[a-z123가-힣]{1,5}" placeholder="입력해주세요">
+    <select name="email" id="">
+      <option value="naver">@naver.com</option>
+      <option value="daum">@daum.net</option>
+      <option value="gmail">@gmail.com</option>
+    <!--  옵션 목록 중에서 사용자가 선택할 수 있도록 하는 드롭다운 메뉴를 생성합니다. -->
+    </select>
+    <input type="password" name="user_pw">
+    <hr>
+    <input type="button" name="button" 
+    value="버튼" onclick='alert(1)'>
+    <!-- 위에 버튼을 사용하기 위해 온클릭을 쓴다 -->
+    <!-- alert()는 JavaScript 함수이며, HTML과 함께 사용됩니다. 
+      이 함수는 웹 페이지에서 경고창을 표시하는 데 사용됩니다 -->
+    <hr>
+     
+    <input type="checkbox" name="time" value="0800"> 08:00
+    <input type="checkbox" name="time" value="1200"> 12:00
+    <hr>
+    <input type="radio" name="job" value="developer"> 개발자
+    <input type="radio" name="job" value="designer"> 디자이너
+    <hr>
+    <input type="file" name="my_img" multiple>
+    <hr>
+    <input type="submit" value="내용제출">
+    <button>전송</button>
+  </form> <!--위와같이 폼에 아무것도 안쓰면 현재 내 위치를 보여줌-->
+</body>
+
+</html>

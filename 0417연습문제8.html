@@ -1,0 +1,29 @@
+<style>
+[data-size=large]{
+  font-size:1.7em;
+}
+[data-size=small]{
+  font-size:0.7em;
+}
+[bg=yellow]>span{
+  background-color:yellow;
+  color:red;
+}
+</style>
+
+<body>
+<p>selector</p>
+<ul>
+<li><p>tag</p></li>
+<li><span>class</span></li>
+<li><p>id</p></li>
+<li bg='yellow'>
+  <span data-size='large'>
+attribute</span></li>
+<li><p>descendant / child</p></li>
+<li><span data-size='small'>
+siblings / adjacent</span></li>
+<li><p data-size='large'>pseudo</p></li>
+</ul>
+
+</body>

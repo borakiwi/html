@@ -1,0 +1,40 @@
+<style>
+div {
+border: 3px solid lime; /* 테두리 */
+border-radius: 10px; /* 반지름 */
+padding: 10px; /* 내부 여백 */
+max-width: 500px; /* 최대 가로크기 */
+}
+div + p {
+  font-size: 1.5rem; /* 글자크기 */
+  font-style: italic; /* 이텔릭체 */
+  text-decoration: underline; /* 밑줄 */
+  color: lightgray; /* 글자색 */
+}
+p+p{
+  font-size: 1.5em;
+}
+</style>
+
+<body>
+  <h2>메뉴 고르기</h2>
+  <div>
+    <p>오늘의 점심 메뉴는?</p>
+    <input type="radio" id="a1" name="a" value="1">
+    <label for="a1">도시락</label><br>
+    <input type="radio" id="a2" name="a" value="2">
+    <label for="a2">컵라면</label><br>
+  </div>
+  <p>※ 어제 점심 메뉴는 볶음밥</p>
+  <p>인원 : 3명</p>
+  <br>
+  <div>
+    <p>오늘의 저녁 메뉴는?</p>
+    <input type="radio" id="b1" name="b" value="1">
+    <label for="b1">족발</label><br>
+    <input type="radio" id="b2" name="b" value="2">
+    <label for="b2">회</label><br>
+  </div>
+  <p>※ 어제 저녁 메뉴는 삼겹살</p>
+  <p>인원 : 3명</p>
+</body>
