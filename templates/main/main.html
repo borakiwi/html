@@ -1,0 +1,68 @@
+
+<head>
+    <title>WAYgame</title>
+    <link rel="stylesheet" href="/static/main/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+  </head>
+
+<body>
+    <h1>who are you?</h1>
+    <h2>5초 안에 인물의 이름 맞추기</h2>
+    <h3>
+        <span id = "rule1"> 규칙 1 </span> 다음 나오는 사진을 보고 누구인지 맞추세요
+    </h3>
+    <h4>
+        <span id = "rule2"> 규칙 2 </span> 총 20문제 한 문제당 5초이니 빠르게 입력해주세요
+    </h4>
+    <h5> <span id = "rule3"> 규칙 3 </span> ALL CLEAR인 경우 명예의 전당에 등극!!
+    </h5>
+    
+
+    <span id="button">
+        <form action="/main/startmain/" method="post">
+            <input type="text" name="nickname" id="text" placeholder="닉네임"><br>
+                <p id='msg'></p>
+                    {% csrf_token %}
+                        <button>
+                            START
+                        </button>
+        </form>
+    </span>
+</body>
+
+<table>
+    <span class = 'glory' >명예의전당</sapn>
+
+    <thead>
+      <tr>
+        <th>순위</th>
+        <th>닉네임</th>
+        <th>점수</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for game in games %}
+      <tr>
+        <td>{{ forloop.counter }}</td>
+        <td>{{ game.player }}</td>
+        <td>{{ game.score }}</td>
+      </tr>
+      {% empty %}
+      <tr>
+        <td colspan="3" id="no-games">No games played yet.</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  
+
+<script>
+    search = location.search
+    if(search.indexOf('msg=1') > -1) {
+        alert('이미 사용중인 닉네임입니다.')
+        document.querySelector('#msg').innerHTML = '이미 사용중인 닉네임입니다.'
+    }
+</script>
+
