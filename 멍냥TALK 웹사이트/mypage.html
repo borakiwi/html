@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>멍냥토크</title>
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<style>
+  #container h2 {
+    text-align: center;
+  }
+
+  #mpWrap {
+    padding: 50px 0 20px;
+    position: relative;
+  }
+
+  .profile {
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile>div {
+    float: left;
+  }
+
+  .profile .ppic {
+    width: auto;
+    padding-right: 70px;
+    border-right: 1px solid #c2bec7;
+    margin-right: 50px;
+    height: 100%;
+  }
+
+  .profile .ppic img {
+    border-radius: 50%;
+    width: 100px;
+    height: auto;
+  }
+
+  .profile .ppic p {
+    text-align: center;
+    font-size: 11px;
+    text-decoration: underline;
+  }
+
+  .profile .fileBtn {
+    display: none;
+  }
+
+  .profile .fileOpen {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .profile .pinfo {
+    margin-top: 30px;
+    font-size: 13px;
+    line-height: 1.5em;
+  }
+
+  .profile .pinfo p {
+    position: relative;
+  }
+
+  .profile .pinfo p:before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 2px;
+    background: #8473bf;
+    transform: rotate(30deg);
+    position: absolute;
+    top: 7px;
+    left: -14px;
+  }
+
+  .profile .pinfo .name {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .writeList {
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    font-size: 15px;
+    margin-top: 40px;
+  }
+
+  .writeList a {
+    display: block;
+    padding: 0 20px 10px;
+  }
+
+  .writeList .mypost {
+    float: left;
+    width: 50%;
+    border-right: 1px solid #eee;
+    box-sizing: border-box;
+  }
+
+  .writeList .mypost:hover a {
+    text-decoration: underline;
+  }
+
+  .writeList .myreply {
+    float: left;
+    width: 50%;
+  }
+
+  .writeList .myreply:hover a {
+    text-decoration: underline;
+  }
+
+  .writeList a:before {
+    content: "";
+    display: block;
+    background: url(img/icommon.svg) no-repeat center 15px/130px 130px;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+  }
+
+  .writeList .myreply a:before {
+    background-position: center -60px;
+  }
+
+  .editp {
+    margin-top: 30px;
+  }
+
+  .editp h3 {
+    margin-bottom: 10px;
+  }
+
+  .editp ul {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .editp li {
+    padding: 15px 5px;
+    border-top: 1px solid #ccc;
+  }
+
+  .editp li .lb {
+    display: inline-block;
+    width: 100px;
+    border-right: 1px solid #ccc;
+    position: relative;
+  }
+
+  .editp li .lb:before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 2px;
+    background: #8473bf;
+    transform: rotate(30deg);
+    position: absolute;
+    top: 7px;
+    left: -14px;
+  }
+
+  .editp li input {
+    width: 200px;
+    padding: 5px;
+    margin-left: 15px;
+    outline: none;
+  }
+
+  .editp li .phone {
+    width: 50px;
+  }
+
+  .editp li .phone.ml0 {
+    margin-left: 5px;
+  }
+
+  .editp .alert {
+    font-size: 11px;
+    color: #f00;
+  }
+
+  .editp .no {
+    display: none;
+  }
+
+  .submit {
+    display: block;
+    border: none;
+    background: #8a7eb3;
+    color: #fff;
+    padding: 8px;
+    font-size: 15px;
+    width: 100px;
+    margin: 30px auto 0 auto;
+    cursor: pointer;
+  }
+
+  .del {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    color: #999;
+    padding: 5px;
+    border: 1px solid #999;
+  }
+</style>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div id="headerIn">
+        <h1 class="logo"><a href="index.html"><img src="img/logo.jpg" alt="멍냥토크"></a></h1>
+        <!--.logo-->
+        <div class="search">
+          <input type="search" class="src"><label>검색하기</label>
+          <select class="h_category">
+            <option>전체</option>
+            <option>멍톡</option>
+            <option>냥톡</option>
+            <option>잡담</option>
+            <option>헬프</option>
+          </select>
+          <a href="#" class="srcimg"><img src="img/srcimg.jpg" alt="검색"></a>
+        </div>
+        <!--.search-->
+
+        <div class="login ut">
+          <a href="mypage.html">
+            <img src="img/user.svg" class="profileimg">
+            <span class="username"><strong>이름</strong></span></a>
+          <span class="user2"> 님, 환영합니다.</span>
+        </div>
+        <a href="#" class="logout">로그아웃</a>
+      </div>
+      <!--#headerIn-->
+    </header>
+    <!--#header-->
+
+    <nav id="lnb">
+      <ul class="cf">
+        <li><a href="#">전체</a></li>
+        <li><a href="#">멍톡</a></li>
+        <li><a href="#">냥톡</a></li>
+        <li><a href="#">잡담</a></li>
+        <li><a href="#">헬프</a></li>
+      </ul>
+    </nav>
+    <!--.lnb-->
+
+    <div id="container">
+      <h2>마이페이지</h2>
+      <div id="mpWrap">
+        <div class="profile cf">
+          <div class="ppic">
+            <img src="img/profileimg.gif" alt="프로필사진" class="pimg">
+            <!--<p>프로필 변경</p>-->
+            <input type="file" id="file" class="fileBtn" accept="image/*">
+            <label for="file" class="fileOpen">프로필 변경</label>
+          </div>
+          <!--.ppic-->
+          <div class="pinfo">
+            <p class="name">이름</p>
+            <p class="email"><span>wfdfcxbfg</span>@<span>gmail.com</span></p>
+            <p class="tel"><span>000</span>-<span>0000</span>-<span>0000</span></p>
+          </div>
+        </div>
+        <!--.profile 프로필-->
+
+        <div class="writeList cf">
+          <div class="mypost"><a href="mypost.html">내가 쓴 글 보기</a></div>
+          <div class="myreply"><a href="myreply.html">내가 쓴 댓글 보기</a></div>
+        </div>
+        <!--.writList 내가 쓴~-->
+        <div class="editp">
+          <h3>회원정보수정</h3>
+          <ul>
+            <li class="nick cf"><label for="nick" class="lb">닉네임 </label>
+              <input type="text" class="nickw">
+              <span class="yes alert">사용 가능한 닉네임입니다.</span>
+              <span class="no alert">사용 중인 닉네임입니다.</span>
+            </li>
+            <li><label for="pw" class="lb">비밀번호 변경 </label><input type="password">
+            <li><label for="pw" class="lb">비밀번호 확인 </label><input type="password">
+            <li><label for="tel" class="lb">휴대폰 번호 </label><input type="tel" class="phone"> -<input type="tel"
+                class="phone ml0"> -<input type="tel" class="phone ml0">
+            </li>
+          </ul>
+          <input type="submit" value="적용" class="submit">
+        </div>
+        <!--.infoEdit 정보수정-->
+        <a href="delaccount.html" class="del">탈퇴하기</a>
+      </div>
+      <!--#mpWrap-->
+    </div>
+    <!--container-->
+
+    <footer id="footer">
+      <p class="copy">COPYRIGHT (C) <span>MNTALK.</span> ALL RIGHTS RESERVED</p>
+      <ul class="fmenu cf">
+        <li><a href="userag.html">이용약관</a><span>|</span></li>
+        <li><a href="privacy.html"><u>개인정보 처리방침</u></a><span>|</span></li>
+        <li><a href="adsform.html">광고문의</a></li>
+      </ul>
+    </footer>
+    <!--#footer-->
+  </div>
+  <!--#wrap-->
+</body>
+
+</html>

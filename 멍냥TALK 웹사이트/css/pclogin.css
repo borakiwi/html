@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+#container {font-family: "맑은고딕";}
+.loginBox {}
+.loginBox h3 {padding-top: 40px; margin-bottom:30px; text-align: center; font-size:24px;font-weight: normal;}
+
+/*일반 로그인*/
+.loginForm {position:relative; width:372px; margin:0 auto; padding: 20px 100px 40px; border-bottom: 1px solid #ddd;}
+
+.loginForm input {padding:15px 40px 15px 30px; width:300px; margin: 0 auto 20px auto; display: block; font-size:14px; border:1px solid #ddd;background-repeat:  no-repeat; background-position: left 10px center;}
+.loginForm .id {background-image: url(../img/userico.jpg); }
+.loginForm .pw {background-image: url(../img/lockico.jpg); }
+
+/*아이디비밀번호 지우기*/
+.loginForm .delete {width:19px; height:18px; background:url(../img/textdelete.jpg) no-repeat; padding:0; border:none; text-indent: -9999px; position:absolute; right:110px; top:35px;}
+.loginForm .delete.d2 {top:105px;}
+
+.loginForm .login {width:372px; border:0; background:#8a7eb3; font-size:18px; color:#fff; font-weight: bold; cursor: pointer;}
+
+/*자동 로그인*/
+.loginCheck input {display: none; }
+.loginCheck span {display: inline-block; vertical-align: middle;}
+.loginCheck .icon {position:relative; width:15px; height:15px; border:1px solid #8a7eb3; border-radius: 3px; transition:background .1s ease;}
+.loginCheck .icon:after {content:""; position:absolute; top:1px; left:5px; width:3px; height:9px; border-right:2px solid #fff; border-bottom:2px solid #fff; transform: rotate(45deg); opacity: 0;}
+.loginCheck .text {margin-left: 5px;}
+
+.loginCheck input:checked ~ .icon {border-color:transparent; background:#8a7eb3;}
+.loginCheck input:checked ~ .icon:after {opacity: 1; transform:rotate(45deg);}
+
+/*소셜로그인*/
+.socialForm {padding:40px 0;}
+.socialForm a {display: block; margin:20px auto 20px auto; padding:20px 40px 20px 30px; width:300px; text-align: center; color:#fff; font-size:16px; font-weight:700;}
+.socialForm a:before {content:""; display: inline-block; width:25px; height:25px; background:url(../img/socialico.png) no-repeat; vertical-align: middle; margin-right:10px;}
+.socialForm .kakao {background: #fdd835;}
+.socialForm .fbook {background: #3a589e;}
+.socialForm .fbook:before {background-position: -49px 0; width:19px;}
+.socialForm .naver {background: #36b662;}
+.socialForm .naver:before {background-position: -24px 0; margin-right: 12px;}

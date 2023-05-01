@@ -1,0 +1,33 @@
+<body>
+  <div>하위 / 자식 선택자</div>
+  <ul>
+    <li>
+      <div>Item 1</div>
+      <ul>
+        <li>Subitem A</li>
+        <li>Subitem B</li>
+      </ul>
+    </li>
+    <li>
+      <div>Item 2</div>
+      <ul>
+        <li>Subitem A</li>
+        <li>Subitem B</li>
+      </ul>
+    </li>
+  </ul>
+</body>
+<style>
+  li{
+    background-color: khaki;
+  }
+  /* 자식인 경우 바로 밑에있는경우 >로 한다 */
+  li > div { 
+     border: 3px solid coral;
+  }
+  /* 바로 아래 하위를 선택할때는 뛰어쓰며 나열한다 */
+ li li {
+  font-style: italic;
+  text-decoration:line-through ;
+ }
+</style>

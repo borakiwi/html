@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>멍냥토크</title>
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/write.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div id="headerIn">
+        <h1 class="logo"><a href="#"><img src="img/logo.jpg" alt="멍냥토크"></a></h1>
+        <!--.logo-->
+        <div class="search">
+          <input type="text" class="src"><label>검색하기</label>
+          <select class="h_category">
+            <option>전체</option>
+            <option>멍톡</option>
+            <option>냥톡</option>
+            <option>잡담</option>
+            <option>헬프</option>
+          </select>
+          <a href="#" class="srcimg"><img src="img/srcimg.jpg" alt="검색"></a>
+        </div>
+        <!--.search-->
+      </div>
+      <!--#headerIn-->
+    </header>
+    <!--#header-->
+    <nav id="lnb">
+      <ul class="cf">
+        <li><a href="#">전체</a></li>
+        <li><a href="#">멍톡</a></li>
+        <li><a href="#">냥톡</a></li>
+        <li><a href="#">잡담</a></li>
+        <li><a href="#">헬프</a></li>
+      </ul>
+    </nav>
+    <!--.lnb-->
+
+    <div id="container">
+      <div class="mainTop cf">
+        <h2>전체</h2>
+        <h3><strong>GUIDE</strong><span> 자유롭게 글을 올리실 수 있습니다. 자유로운 만큼 더욱 더 예절을 지켜주시기 바랍니다.</span></h3>
+        <p class="mainRec btn"><a href="#">추천글</a></p>
+        <p class="mainWrite btn"><a href="#">글쓰기</a></p>
+      </div>
+      <!--.mainTop-->
+
+      <div class="titleWrite">
+        <p>제목: <input type="text"></p>
+      </div>
+      <!--.titleWrite-->
+      <div id="summernote"></div>
+      <div class="postSubmit">
+        <a href="#" class="btn">글쓰기</a>
+      </div>
+      <!--.writeSubmit-->
+    </div>
+    <!--#containter-->
+  </div>
+  <!--#wrap-->
+
+  <footer id="footer">
+    <p class="copy">COPYRIGHT (C) <span>MNTALK.</span> ALL RIGHTS RESERVED</p>
+    <ul class="fmenu cf">
+      <li><a href="userag.html">이용약관</a><span>|</span></li>
+      <li><a href="privacy.html"><u>개인정보 처리방침</u></a><span>|</span></li>
+      <li><a href="adsform.html">광고문의</a></li>
+    </ul>
+  </footer>
+  <!--#footer-->
+  <script>
+    $('#summernote').summernote({
+      placeholder: '내용을 입력하세요',
+      tabsize: 1,
+      height: 400,
+    });
+  </script>
+</body>
+
+</html>

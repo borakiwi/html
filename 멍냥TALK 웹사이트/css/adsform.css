@@ -1,0 +1,9 @@
+#container h2{font-weight: bold; text-align: center;}
+#container h2:after{content:""; display: block; margin: 8px auto 15px auto; width:30px; height:3px; background:#8a7eb3; 4;}
+.guide{margin-bottom: 35px; text-align: center;}
+
+form .fwrite{width:472px; margin:0 auto;}
+.fwrite input{display: block; margin:10px 0; width:450px; padding: 10px; border:1px solid #999; }
+.fwrite textarea{width:450px; padding:10px 10px 200px; resize: none; background: #f7f7f7;}
+.fwrite p{text-align: center;}
+.submit{display: block; width:100px; padding:10px 15px; margin:30px auto 0 auto; border:0; background:#8a7eb3; color:#fff; font-size:14px;}

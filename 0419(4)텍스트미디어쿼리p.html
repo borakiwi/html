@@ -1,0 +1,53 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, inital-scale=1.0">
+  <style>
+    * { box-sizing: border-box; }
+
+    header {
+      padding: 20px;
+      border-bottom: solid 1px black;
+    }
+
+    img { max-width: 100%; }
+
+    nav {
+      width: 20%;
+      float: left;
+      padding: 15px;
+    }
+
+    nav li { padding-top: 10px; }
+
+    section {
+      width: 80%;
+      float: left;
+      padding: 20px;
+    }
+/* 브라우죠 크기 와이드에 따라 사진위치가 달라진다*/
+    @media only screen and (max-width: 768px) {
+      nav { width: 100%; }
+      section { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2>포토 갤러리</h2>
+  </header>
+  <nav>
+    <ul>
+      <li>작품 사진 1</li>
+      <li>작품 사진 2</li>
+      <li>작품 사진 3</li>
+      <li>작품 사진 4</li>
+    </ul>
+  </nav>
+  <section>
+    <h3>작품 사진 1</h3>
+    <div>
+      <img src="http://ggoreb.com/images/winter.jpg">
+    </div>
+  </section>
+</body>

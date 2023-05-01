@@ -1,0 +1,42 @@
+<style>
+  html {
+    font-size: 10px;
+  }
+
+  .em li {
+    font-size: 1.3em;
+    /* em은 자식들이 부모만큼 커짐 */
+  }
+
+  .rem li {
+    font-size: 1.3rem;
+  /* 위와 상관없다 차이점이다 */
+  }
+</style>
+
+<body>
+  <ul class="em">
+    <li>One</li>
+    <li>Two
+      <ul>
+        <li>Two A</li>
+        <li>Two B<ul>
+            <li>Two B 2</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <ul class="rem">
+    <li>One</li>
+    <li>Two
+      <ul>
+        <li>Two A</li>
+        <li>Two B<ul>
+            <li>Two B 2</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</body>

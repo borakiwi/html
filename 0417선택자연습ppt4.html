@@ -1,0 +1,52 @@
+<body>
+  <table border="1">
+    <tr>
+      <th>구분</th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+    </tr>
+    <tr>
+      <td>가</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>나</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>다</td>
+      <td>30</td>
+      <td>30</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>계</td>
+      <td>60</td>
+      <td>60</td>
+      <td>60</td>
+    </tr>
+  </table>
+</body>
+
+<style>
+  th {
+    background-color: lightgray;
+  }
+  tr:nth-child(2) > td:nth-child(n+2) {
+    background-color: yellow;
+  }
+  tr:nth-child(3) > td:nth-child(-n+3) {
+    background-color: green;
+  }
+  tr:nth-child(4) >  td:nth-child(n):not(:nth-child(3)) {
+    background-color: aqua;
+  }
+  tr:nth-child(5) > td:nth-child(n):not(:nth-child(1)):not(:nth-child(4)) {
+    background-color: orange;
+  }
+</style>

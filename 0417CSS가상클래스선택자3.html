@@ -1,31 +1,21 @@
 <body>
   <style>
-  
-    tr:nth-child(odd) {
-      background-color: cyan;
+    .child > u:nth-child(odd) {
+    background-color: greenyellow;
     }
-    td:nth-child(even){
-      background-color:yellow;
+    .type > u:nth-of-type(2n) {
+    background-color: greenyellow;
     }
-    td {border:5px solid}
-  
-    display: flex; /* 요소 배치 속성 */
-align-items: center; /* (flex 속성) 정렬 */
-justify-content: center; /* (flex 속성) 정렬 */
-}
-table {
-border-spacing: 0; /* 테두리 두께 없애기 */
-text-align: center; /* 글자정렬 */
-font-size: 1.5em; /* 글자크기 */
-}
-border: 1px solid black; /* 테두리 */
-border-top: 3px solid black; /* 테두리-상단 */
-border-bottom: 3px solid black; /* 테두리-하단 */
-border-left: 3px solid black; /* 테두리-좌측 */
-border-right: 3px solid black; /* 테두리-우측 */
-text-decoration: underline; /* 밑줄 */
-color: red;
-background-color: lightgreen;
-background-color: lightpink;
+    </style>
+    <body>
+    <div class="child">
+    <u>1번</u> <u>2번</u> <em>3번</em>
+    <u>4번</u> <u>5번</u> <u>6번</u>
+    </div>
+    <div class="type">
+    <u>1번</u> <u>2번</u> <em>3번</em>
+    <u>4번</u> <u>5번</u> <u>6번</u>
+    </div>
+    </body>
 
 </body>

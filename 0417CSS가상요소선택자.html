@@ -1,0 +1,35 @@
+<style>
+  /* ::before 특정 요소의 내용 앞 */
+  a::before {
+    content: '앵커 태그 - ';
+    color: skyblue;
+  }
+/* ::after 특정 요소의 내용 뒤 */
+  a:active::after {
+    content: ' (' attr(href) ')';
+    color: purple;
+  }
+/* ::selection Drag 해서 선택되는 영역 */
+  a::selection {
+    background-color: cyan;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: blue;
+  }
+
+  a:active {
+    color: yellow;
+  }
+</style>
+
+<body>
+  <a href="http://ggoreb.com">GGoReb</a><br>
+  <a href="http://www.zdnet.co.kr">ZDNET</a><br>
+  <a href="http://www.oss.kr">공개SW포털</a><br>
+  <a href="http://bloter.net">블로터</a>
+</body>

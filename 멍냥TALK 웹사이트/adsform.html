@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>멍냥토크</title>
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/adsform.css" rel="stylesheet">
+</head>
+
+<style>
+  #container h2 {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  #container h2:after {
+    content: "";
+    display: block;
+    margin: 8px auto 15px auto;
+    width: 30px;
+    height: 3px;
+    background: #8a7eb3;
+  }
+
+  .guide {
+    margin-bottom: 35px;
+    text-align: center;
+  }
+
+  form .fwrite {
+    width: 472px;
+    margin: 0 auto;
+  }
+
+  .fwrite input {
+    display: block;
+    margin: 10px 0;
+    width: 450px;
+    padding: 10px;
+    border: 1px solid #999;
+  }
+
+  .fwrite textarea {
+    width: 450px;
+    padding: 10px 10px 200px;
+    resize: none;
+    background: #f7f7f7;
+  }
+
+  .fwrite p {
+    text-align: center;
+  }
+
+  .submit {
+    display: block;
+    width: 100px;
+    padding: 10px 15px;
+    margin: 30px auto 0 auto;
+    border: 0;
+    background: #8a7eb3;
+    color: #fff;
+    font-size: 14px;
+  }
+</style>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div id="headerIn">
+        <h1 class="logo"><a href="index.html"><img src="img/logo.jpg" alt="멍냥토크"></a></h1>
+        <!--.logo-->
+        <div class="search">
+          <input type="search" class="src"><label>검색하기</label>
+          <select class="h_category">
+            <option>전체</option>
+            <option>멍톡</option>
+            <option>냥톡</option>
+            <option>잡담</option>
+            <option>헬프</option>
+          </select>
+          <a href="#" class="srcimg"><img src="img/srcimg.jpg" alt="검색"></a>
+        </div>
+        <!--.search-->
+        <div class="login ut">
+          <a href="mypage.html">
+            <img src="img/user.svg" class="profileimg">
+            <span class="username"><strong>이름</strong></span></a>
+          <span class="user2"> 님, 환영합니다.</span>
+        </div>
+        <a href="#" class="logout">로그아웃</a>
+      </div>
+      <!--#headerIn-->
+    </header>
+    <!--#header-->
+
+    <nav id="lnb">
+      <ul class="cf">
+        <li><a href="#">전체</a></li>
+        <li><a href="#">멍톡</a></li>
+        <li><a href="#">냥톡</a></li>
+        <li><a href="#">잡담</a></li>
+        <li><a href="#">헬프</a></li>
+      </ul>
+    </nav>
+    <!--.lnb-->
+
+
+    <div id="container">
+      <h2>CONTACT US</h2>
+      <div class="guide">
+        <p>광고 집행과 관련한 문의사항을 양식에 맞게 작성해주세요.</p>
+        <p>신속하게 답변드리겠습니다.</p>
+      </div>
+      <!--.guide-->
+      <form method="post" action="">
+        <div class="fwrite">
+          <input type="text" name="name" placeholder="이름(*필수)">
+          <input type="text" name="tell" placeholder="연락처(*필수)">
+          <input type="text" name="email" placeholder="이메일(*필수)">
+          <textarea placeholder="* 내용을 입력해주세요"></textarea>
+          <p>*연락처는 문의내용 이외에 어떠한 다른 목적으로도 사용되지 않습니다.</p>
+        </div>
+        <input type="submit" value="보내기" class="submit">
+      </form>
+    </div>
+    <!--container-->
+
+    <footer id="footer">
+      <p class="copy">COPYRIGHT (C) <span>MNTALK.</span> ALL RIGHTS RESERVED</p>
+      <ul class="fmenu cf">
+        <li><a href="userag.html">이용약관</a><span>|</span></li>
+        <li><a href="privacy.html"><u>개인정보 처리방침</u></a><span>|</span></li>
+        <li><a href="adsform.html">광고문의</a></li>
+      </ul>
+    </footer>
+    <!--#footer-->
+  </div>
+  <!--#wrap-->
+</body>
+
+</html>

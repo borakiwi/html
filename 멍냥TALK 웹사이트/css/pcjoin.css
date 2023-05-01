@@ -1,0 +1,22 @@
+@Charset "utf-8";
+
+#container {font-family: "맑은고딕";}
+
+.joinBox {width:452px; margin:0 auto;}
+.joinBox h3 {padding-top: 40px; margin-bottom:30px; text-align: center; font-size:24px;font-weight: normal;}
+.joinBox > div {float:left; margin:0 10px;}
+.joinBox > div span {display: block; font-size:12px; font-weight: normal; margin-top:5px;}
+.joinBox > div a {display: block; width:142px; height:36px; padding: 60px 32px; text-align: center; font-size:17px; font-weight:bold;}
+
+.joinBox .indiv a {background: #8a7eb3; color:#fff;}
+.joinBox .company a {background: #fff; color:#fff; width:114px; padding:60px 44px; height:32px; border:2px solid #8a7eb3; color:#444;}
+
+/*소셜로그인*/
+.socialForm {padding:20px 0 40px;}
+.socialForm a {display: block; margin:20px auto 20px auto; padding:20px 40px 20px 30px; width:365px; text-align: center; color:#fff; font-size:16px; font-weight:700;}
+.socialForm a:before {content:""; display: inline-block; width:25px; height:25px; background:url(../img/socialico.png) no-repeat; vertical-align: middle; margin-right:20px;}
+.socialForm .kakao {background: #fdd835;}
+.socialForm .fbook {background: #3a589e;}
+.socialForm .fbook:before {background-position: -49px 0; width:19px;}
+.socialForm .naver {background: #36b662;}
+.socialForm .naver:before {background-position: -24px 0; margin-right: 24px;}

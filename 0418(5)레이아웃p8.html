@@ -1,0 +1,29 @@
+<style>
+  /* 텍스트에리아를 안보이게 아래와 같이 display  리사이즈를 논으로 한다
+  display 속성은 요소가 어떻게 배치되는지, 크기와 위치를 어떻게 결정하는지에 대한 기본적인 규칙을 제공합니다 */
+   textarea{display: none; resize: none;} 
+   /*텍스트아레어는 인풋.라벨에 인접되어 있어 아래와같이 쓴다 */
+   input:checked+label+textarea {
+    /* input 요소가 체크된 후 다음에 오는 label 요소와
+     textarea 요소를 함께 스타일링할 수 있습니다. */
+    display: inline-block;
+    /* inline-block > 인라인(inline) 박스와 블록(block) 박스의 특징을 
+    모두 가진 박스로 만들어주는 속성입니다. */
+  }
+</style>
+
+<body>
+  <input type='checkbox' id='a'>
+  <label for='a'>정보 1</label>
+  <textarea name='info_a'></textarea>
+  <br>
+  <input type='checkbox' id='b'>
+  <label for='b'>정보 2</label>
+  <textarea name='info_b'></textarea>
+  <br>
+  <input type='checkbox' id='c'>
+  <label for='c'>정보 3</label>
+  <textarea name='info_c'></textarea>
+
+
+</body>

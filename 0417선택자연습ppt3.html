@@ -1,0 +1,24 @@
+<body>
+  <input type='checkbox' id='check1'>
+  <label for='check1'>1번</label>
+  <input type='checkbox' id='check2' checked>
+  <label for='check2'>2번</label>
+  <input type='checkbox' id='check3'>
+  <label for='check3'>3번</label>
+  <input type='checkbox' id='check4' checked>
+  <label for='check4'>4번</label>
+  <br>
+  <input type='radio' id='radio1' checked name='kind'>
+  <label for='radio1'>식물</label>
+  <input type='radio' id='radio2' name='kind'>
+  <label for='radio2'>동물</label>
+</body>
+<style>
+  [type=checkbox]:checked + label {
+    background-color: yellow
+  }
+  [type=radio]:checked + label {
+    background-color: skyblue
+  }
+ 
+</style>

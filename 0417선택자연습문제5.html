@@ -1,0 +1,37 @@
+<body>
+  <p>
+    밀폐된 포장식품 중에서 식중독이 발생했다면
+    주로 어떤 균에 의해서인가?
+  </p>
+  <input type="radio" name="answer" id="a1">
+  <label for="a1">살모넬라균</label><br>
+  <input type="radio" name="answer" id="a2">
+  <label for="a2">대장균</label><br>
+  <input type="radio" name="answer" id="a3">
+  <label for="a3">아리조나균</label><br>
+  <input type="radio" name="answer" id="a4">
+  <label for="a4">클로스트리디움 보툴리늄균</label>
+
+</body>
+<style>
+  p {
+    max-width: 400px;
+    word-break: keep-all;
+    /* 줄바꿈 기준 단어 */
+    background-color: lightcyan;
+    /* 배경색 */
+  }
+  input:checked + label {
+    background-color: lightcyan;
+  }
+
+
+
+
+  /* normal: 기본값으로, 브라우저가 단어 단위로 줄 바꿈을 시도합니다.
+break-all: 단어와 상관없이 문자열을 줄 바꿈할 수 있습니다.
+keep-all: 단어를 분리하지 않고 줄 바꿈을 시도합니다. 
+이 옵션은 주로 CJK(한자, 일본어, 중국어, 한국어 등) 텍스트에 사용됩니다.
+break-word: 단어 단위로 줄 바꿈을 시도하지만, 공백 없이 이어진 문자열은
+ 단어를 분리하고 줄 바꿈합니다. */
+</style>

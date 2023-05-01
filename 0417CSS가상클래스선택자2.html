@@ -1,21 +1,29 @@
-<body>
-  <style>
-    .child > u:nth-child(odd) {
-    background-color: greenyellow;
-    }
-    .type > u:nth-of-type(2n) {
-    background-color: greenyellow;
-    }
-    </style>
-    <body>
-    <div class="child">
-    <u>1번</u> <u>2번</u> <em>3번</em>
-    <u>4번</u> <u>5번</u> <u>6번</u>
-    </div>
-    <div class="type">
-    <u>1번</u> <u>2번</u> <em>3번</em>
-    <u>4번</u> <u>5번</u> <u>6번</u>
-    </div>
-    </body>
 
+<style>
+  input+span {
+    display: none;
+  }
+
+  input:checked+span {
+    display: inline-block;
+  }
+
+  input:checked+span+span {
+    display: none;
+  }
+ span( transition : 3s;)
+  span:hover { background-color: gold; }
+  fint-size:3em;
+  span:active { background-color: aqua; } 
+</style>
+
+<body>
+  <input type="checkbox">
+  <span style="color:green;">선택O</span>
+  <span style="color: red;">선택X</span>
+  <hr>
+  <input type="checkbox">
+  <span style="color:green;">선택O</span>
+  <span style="color: red;">선택X</span>
 </body>
+

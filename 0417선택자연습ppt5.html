@@ -1,0 +1,58 @@
+<body>
+  <table border="1">
+    <tr>
+      <th>구분</th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>D</th>
+    </tr>
+    <tr>
+      <td>가</td>
+      <td>A</td>
+      <td>B</td>
+      <td>C</td>
+      <td>D</td>
+    </tr>
+    <tr>
+      <td>나</td>
+      <td>A</td>
+      <td>B</td>
+      <td>C</td>
+      <td>D</td>
+    </tr>
+    <tr>
+      <td>다</td>
+      <td>A</td>
+      <td>B</td>
+      <td>C</td>
+      <td>D</td>
+    </tr>
+  </table>
+</body>
+<style>
+  tr:nth-child(2)>td:nth-child(n):not(:nth-child(2)):not(:nth-child(4)) {
+    background-color: orange;
+  }
+
+  tr:nth-child(2)>td:nth-child(n):not(:nth-child(1)):not(:nth-child(3)):not(:nth-child(5)) {
+    background-color: aqua;
+  }
+
+  tr:nth-child(3)>td:nth-child(n):not(:nth-child(2)):not(:nth-child(4)) {
+    background-color: orange;
+  }
+
+  tr:nth-child(3)>td:nth-child(n):not(:nth-child(1)):not(:nth-child(3)):not(:nth-child(5)) {
+    background-color: aqua;
+  }
+  tr:nth-child(4) >td:nth-child(n):not(:nth-child(2)):not(:nth-child(4)) {
+    background-color: orange;
+  }
+  tr:nth-child(4) > td:nth-child(n):not(:nth-child(1)):not(:nth-child(3)):not(:nth-child(5)) {
+    background-color: aqua;
+  }
+
+
+
+</style>

@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/*개별*/
+/*글쓰기 영역*/
+.titleWrite { font-size:14px; font-weight:bold; margin: 30px 0 20px 15px; }
+.titleWrite input { width:600px; padding:5px; height: 12px; }
+.note-editable{ line-height:1em; }
+.note-statusbar { display: none; }
+
+/*글쓰기 버튼*/
+.postSubmit { margin:40px 0; }
+.postSubmit a { display: block; font-size:16px; background:#8a7eb3; color:#fff; font-weight: bold; padding:10px; width:60px; margin:0 auto; text-align: center; }
+
+.note-btn-group.note-view {display: none;}
+

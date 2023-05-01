@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>숫자 맞추기 게임</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h1>숫자 맞추기 게임</h1>
+  <p>1부터 100까지의 숫자를 맞춰보세요!</p>
+  <input type="text" id="guess" placeholder="숫자를 입력하세요">
+  <button onclick="checkGuess()">확인</button>
+  <p id="result"></p>
+
+  <script>
+    // 1부터 100까지의 랜덤 숫자 생성
+    const answer = Math.floor(Math.random() * 100) + 1;
+
+    function checkGuess() {
+      // 사용자가 입력한 숫자 가져오기
+      const guess = parseInt(document.getElementById("guess").value);
+
+      // 숫자 비교
+      if (guess < answer) {
+        document.getElementById("result").innerHTML = "너무 작아요!";
+      } else if (guess > answer) {
+        document.getElementById("result").innerHTML = "너무 커요!";
+      } else {
+        document.getElementById("result").innerHTML = `정답입니다! ${guess}이(가) 맞았습니다.`;
+      }
+    }
+  </script>
+</body>
+</html>

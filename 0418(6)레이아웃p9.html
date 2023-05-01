@@ -1,0 +1,65 @@
+<!-- id는 #으로 표현한다 -->
+<meta name="viewport" 
+content="width=device-width, initial-scale=1.0">
+<style>
+  #content>div {
+    display: inline-block;
+    /* 위와같이 적용하면 가로로 나오게 된다 */
+    background-color: white;
+    border-radius: 30px;
+    width: 25%;
+    margin: 10px;
+    /* margin은 블록 레벨 요소의 가장 바깥쪽 여백을 
+    지정하는 속성입니다. 요소의 외부 여백을 조절하여 
+    요소와 요소 사이의 간격을 조절할 수 있습니다. */
+  }
+/* 부모 */
+  #cotent {
+    background-color: lightgray;
+    display: inline-block;
+    width: 700px;
+    position: relative;
+    /* position: relative를 사용하면 
+    top, bottom, left, right 속성을 사용하여 
+    요소를 움직일 수 있습니다. */
+  }
+
+  #content>div :first-child {
+    right: 0px;
+    bottom: 0;
+    background-color: red;
+    /* position: absolute; */
+  }
+
+  #content>div:nth-child(2) {
+    top: 50px;
+    background-color: green;
+    position: relative;
+  }
+</style>
+
+<body>
+  <div id="content">
+    <div>
+      <h1>공지사항</h1>
+      <ul>
+        <li>게시물_01</li>
+        <li>게시물_02</li>
+      </ul>
+    </div>
+    <div>
+      <h1>공지사항</h1>
+      <ul>
+        <li>게시물_01</li>
+        <li>게시물_02</li>
+      </ul>
+    </div>
+    <div>
+      <h1>공지사항</h1>
+      <ul>
+        <li>게시물_01</li>
+        <li>게시물_02</li>
+      </ul>
+    </div>
+  </div>
+</body>
