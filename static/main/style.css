@@ -1,0 +1,135 @@
+
+h1 {
+  font-size: 53px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #8B03D6;
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 35px;
+  color: #AC33EF;
+}
+
+h3 {
+  margin-left: 0px;
+  text-align: center;
+  font-size: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: #6D0021;
+}
+
+h4 {
+  text-align: center;
+  font-size: 10px;
+  margin-left: 28px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: #6D0021;
+}
+
+h5 {
+  text-align: center;
+  font-size: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: #6D0021;
+}
+
+
+#button {
+  display: block;
+  margin: 50px auto 0;
+  text-align: center;
+}
+
+#text {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#msg {
+  color: red;
+  text-align: center;
+}
+
+button {
+  background-color: #FF837C;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+body {
+  font-family: 'Gowun Dodum', sans-serif;
+  background-color: #AEF422;
+}
+
+table {
+  font-size: 30px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #F54278;
+
+}
+
+.glory { 
+  font-size: 24px;
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50;
+  margin-bottom: 0px;
+  color: #AE0035;
+  font-weight: bold;
+ 
+}
+
+#ranking-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 0px;
+  
+}
+
+th {
+  font-size: 20px;
+  align-items: center;
+  height: 20px;
+  text-align: center;
+}
+
+tr {
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+  
+}
+
+#no-games {
+  font-size: 20px;
+  color: #FEC9D9;
+}
+
+#rule1, #rule2, #rule3 {
+  color: #090003;
+}
